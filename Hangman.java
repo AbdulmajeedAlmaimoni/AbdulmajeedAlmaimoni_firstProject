@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.Random;
 public class Hangman {
 	
-	String[] words={"program","java","csc111",};
+	String[] words={"program","java","csc111","hello"};
     char[] hiddenWord;
     char[] guessedWord;
     
@@ -53,6 +53,7 @@ public class Hangman {
     	
     	while(true) {
     		if(isComplete()) {
+		system.out.println("Congrats you guessed the word!!!");	
     		System.out.print("The word is "); printWord(); System.out.println(". You Missed "+numMisses+" time(s)");
     		break;
     		}
